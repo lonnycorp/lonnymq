@@ -1,5 +1,7 @@
 # LonnyMQ
 
+![ci](https://github.com/tlonny/lonnymq/actions/workflows/check.yml/badge.svg)
+
 A high-performance, multi-tenant PostgreSQL message queue implementation for Node.js/TypeScript.
 
 ## Features
