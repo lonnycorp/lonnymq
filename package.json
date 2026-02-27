@@ -10,7 +10,7 @@
     }
   },
   "repository": {
-    "url": "https://github.com/tlonny/lonnymq"
+    "url": "https://github.com/lonnycorp/lonnymq"
   },
   "files": ["dist"],
   "devDependencies": {
