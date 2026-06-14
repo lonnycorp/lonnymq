@@ -1,5 +1,12 @@
 # LonnyMQ
 
-![ci](https://github.com/tlonny/lonnymq/actions/workflows/check.yml/badge.svg)
+![Check](https://github.com/tlonny/lonnymq/actions/workflows/check.yml/badge.svg)
+![Release](https://github.com/tlonny/lonnymq/actions/workflows/release.yml/badge.svg)
 
-Please consult the website: [LonnyMQ](https://lonnymq.lonnycorp.com) for documentation.
+## Installation
+
+```sh
+bun add @lonnycorp/lonnymq
+```
+
+For more detailed documentation, see the [LonnyMQ website](https://lonnymq.lonnycorp.com).
