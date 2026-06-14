@@ -21,7 +21,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Check release tag
         run: |
-          package_version=$(node -p "require('./lonnymq/package.json').version")
+          package_version=$(node -p "require('./package.json').version")
           if [ "$RELEASE_TAG" != "$package_version" ]; then
             echo "Release tag '$RELEASE_TAG' must exactly match package version '$package_version'." >&2
             exit 1
@@ -29,6 +29,6 @@ jobs:
         env:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
       - run: bun ci
-      - run: bun lonnymq:build
+      - run: bun run build
       - run: npm install -g npm@latest
-      - run: npm publish ./dist/lonnymq
+      - run: npm publish
