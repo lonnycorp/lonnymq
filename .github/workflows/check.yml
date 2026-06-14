@@ -1,7 +1,7 @@
 name: Check
 on: [push]
 jobs:
-  test:
+  check:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     services:
