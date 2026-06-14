@@ -1,0 +1,32 @@
+{
+  "name": "lonnymq-workspace",
+  "private": true,
+  "packageManager": "bun@1.3.5",
+  "scripts": {
+    "lonnymq:build": "bun lonnymq/build.ts",
+    "lonnymq:check": "bun run lonnymq:typecheck && bun run lonnymq:lint && bun run lonnymq:test",
+    "lonnymq:lint": "bun --cwd lonnymq eslint --max-warnings=0",
+    "lonnymq:test": "bun test --cwd lonnymq",
+    "lonnymq:typecheck": "bun --cwd lonnymq tsc --noEmit",
+    "lonnymq:tsdown": "bun --cwd lonnymq tsdown",
+    "www:build": "bun www/build.ts"
+  },
+  "workspaces": [
+    "lonnymq",
+    "www"
+  ],
+  "catalog": {
+    "@stylistic/eslint-plugin-ts": "4.2.0",
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.4",
+    "@typescript-eslint/eslint-plugin": "8.26.1",
+    "@typescript-eslint/parser": "8.26.1",
+    "eslint": "9.22.0",
+    "@lonnycorp/htmlforge": "0.1.1",
+    "pg": "^8.16.3",
+    "tsdown": "^0.22.2",
+    "typedoc": "^0.28.15",
+    "typescript": "^5"
+  },
+  "version": ""
+}

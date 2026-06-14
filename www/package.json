@@ -1,0 +1,12 @@
+{
+  "name": "www",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@types/mdast": "^4.0.4"
+  },
+  "dependencies": {
+    "@lonnycorp/htmlforge": "catalog:",
+    "mdast-util-from-markdown": "^2.0.2"
+  }
+}

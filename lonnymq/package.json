@@ -1,0 +1,33 @@
+{
+  "name": "@lonnycorp/lonnymq",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "repository": {
+    "url": "git+https://github.com/lonnycorp/lonnymq.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@stylistic/eslint-plugin-ts": "catalog:",
+    "@types/bun": "catalog:",
+    "@types/pg": "catalog:",
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "eslint": "catalog:",
+    "pg": "catalog:",
+    "tsdown": "catalog:",
+    "typedoc": "catalog:",
+    "typescript": "catalog:"
+  }
+}
